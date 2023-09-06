@@ -41,6 +41,12 @@ create_github_token()
 gitcreds::gitcreds_set()
 ```
 
+- If you are working with linux run the following once in the terminal:
+
+```bash
+git config --global credential.helper 'cache --timeout=10000000'
+```
+
 - Clone the repository 
 
 - Go to our class's GitHub organization [sta-779-s22](https://github.com/sta-779-s22)
