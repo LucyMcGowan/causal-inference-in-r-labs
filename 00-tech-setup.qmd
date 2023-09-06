@@ -41,7 +41,7 @@ create_github_token()
 gitcreds::gitcreds_set()
 ```
 
-- If you are working with linux run the following once in the terminal:
+- If you are working with Linux run the following once in the terminal:
 
 ```bash
 git config --global credential.helper 'cache --timeout=10000000'
