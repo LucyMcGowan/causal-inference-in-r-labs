@@ -15,7 +15,8 @@ Want to do this on your own machine?
 - Install Git. Have Windows? [Use these instructions](https://happygitwithr.com/install-git.html#install-git-windows) Have a Mac? [Do this](https://happygitwithr.com/install-git.html#macos)
 :::
 
-- Go to [RStudio Pro](https://rstudio.deac.wfu.edu/) and open a project. Install the `usethis` package by running the following code in the Console
+- Open Rstudio
+- Install the `usethis` package by running the following code in the Console
 
 ```
 install.packages("usethis")
@@ -49,18 +50,19 @@ git config --global credential.helper 'cache --timeout=10000000'
 
 - Clone the repository 
 
-- Go to our class's GitHub organization [sta-779-s22](https://github.com/sta-779-s22)
+- Go to our class's GitHub organization [sta-779-s25](https://github.com/sta-779-s25)
 - Find the GitHub repository (which we'll refer to as "repo" going forward) for this lab, `lab-00-tech-setup-YOUR-GITHUB-HANDLE`. This repo contains a template you can build on to complete your assignment.
 
-```{r clone-repo-link, fig.margin = TRUE, echo = FALSE, fig.width=3}
-knitr::include_graphics("img/01/clone-repo-link.png")
+
+```{r clone-repo-link}
+#| label: clone-repo-link
+#| column: margin
+#| echo: false
+#| fig-width: 10
+knitr::include_graphics("img/code.png")
 ```
 
-- On GitHub, click on the green **Clone or download** button, select **Use HTTPS** (this might already be selected by default, and if it is, you'll see the text **Clone with HTTPS** as in the image below). Click on the clipboard icon to copy the repo URL.
-
-```{r new-project-from-gh, fig.margin = TRUE, echo = FALSE, fig.width=3}
-knitr::include_graphics("img/01/new-project-from-gh.png")
-```
+- On GitHub, click on the green **Code** button, select **Use HTTPS** (this might already be selected by default, and if it is, you'll see the text **Clone** as in the image in the margin). Click on the copy icon to copy the repo URL.
 
 - Go to RStudio Click File > New Project > Version Control > Git. In "Repository URL", paste the URL of your GitHub repository. It will be something like `https://github.com/LucyMcGowan/myrepo.git`.
 
@@ -95,7 +97,7 @@ The top portion of your Quarto file (between the three dashed lines) is called Y
 
 ## YAML: 
 
-Open the Quarto (qmd) file in your project, change the author name to your name, and Render the document.
+Create a new Quarto document by going to File > New File > Quarto Document. Open the Quarto (qmd) file in your project, change the author name to your name, and Render the document.
 
 ```
 ---
